@@ -1,10 +1,11 @@
 PlayerMove:
 
 //Move the ship in the X direction using GetDirectionX()
-/*
+
 //This method is using the computers accelerometer, not the keyboard
 playerx=playerx+GetDirectionX()*12
-*/
+
+/*
 //*** Read keyboard ***
 //** If its the A key, move left ***
 if GetRawKeyState(65) = 1
@@ -22,7 +23,7 @@ endif
 if GetRawKeyState(87) = 1
 	playery = playery-12
 endif
-
+*/
 //Check if the player ship is at the edge of the left side
 if playerx<0
 	playerx=0
