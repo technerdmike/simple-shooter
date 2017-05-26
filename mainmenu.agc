@@ -8,7 +8,7 @@ CreateText(3,"High Score: ")
 SetTextSize(3, 60)
 SetTextPosition(3, 768-GetTextTotalWidth(3), 0)
 
-CreateText(4,"Press Spacebar to start game")
+CreateText(4,"Press Enter to start game")
 SetTextSize(4, 60)
 SetTextPosition(4, (768-GetTextTotalWidth(4))/2, 900)
 
@@ -18,7 +18,7 @@ gosub showmenutext
 if GetKeyboardExists()=1
 	repeat
 		sync()
-	until GetRawKeyState(65)=1
+	until GetRawKeyState(13)=1
 else
 	repeat
 		sync()

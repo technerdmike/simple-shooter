@@ -2,7 +2,7 @@ Player_shoots:
 
 //Check if player has fired
 if GetKeyboardExists()=1
-	if GetRawKeyState(65)=1 and lazer_fired=0
+	if GetRawKeyState(13)=1 and lazer_fired=0
 		PlaySound(lazer)
 		lazer_fired=1
 		lazerx=GetSpriteX(1)+GetSpriteWidth(1)/2-GetSpriteWidth(2)/2
