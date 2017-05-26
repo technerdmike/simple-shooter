@@ -4,6 +4,7 @@
 SetWindowSize(768,1024,0)
 SetWindowAllowResize(5)
 SetVirtualResolution(768,1024)
+SetOrientationAllowed(1,1,0,0)
 UseNewDefaultFonts(1)
 
 //Player Position Variables
@@ -37,7 +38,7 @@ hiscore=0
 #include "enemy_move.agc"
 #include "sounds.agc"
 #include "Collision.agc"
-#include "Stars.agc"
+#include "stars.agc"
 #include "Text.agc"
 #include "mainmenu.agc"
 

@@ -1,28 +1,30 @@
 PlayerMove:
 
 //Move the ship in the X direction using GetDirectionX()
-/*
+
 //This method is using the computers accelerometer, not the keyboard
-playerx=playerx+GetDirectionX()*12
-*/
+
+if GetKeyboardExists()=1
 //*** Read keyboard ***
 //** If its the A key, move left ***
-if GetRawKeyState(65) = 1
-	playerx = playerx-12
-endif
+	if GetRawKeyState(65) = 1
+		playerx = playerx-12
+	endif
 //** If its the S key, move down **
-if GetRawKeyState(83) = 1
-	playery = playery+12
-endif
+	if GetRawKeyState(83) = 1
+		playery = playery+12
+	endif
 //** If its the D key, move right **
-if GetRawKeyState(68)
-	playerx = playerx+12
-endif
+	if GetRawKeyState(68)
+		playerx = playerx+12
+	endif
 //** If its the W key, move up **
-if GetRawKeyState(87) = 1
-	playery = playery-12
+	if GetRawKeyState(87) = 1
+		playery = playery-12
+	endif
+else
+	playerx=playerx+GetDirectionX()*12
 endif
-
 //Check if the player ship is at the edge of the left side
 if playerx<0
 	playerx=0

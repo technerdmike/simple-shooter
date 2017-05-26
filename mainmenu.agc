@@ -15,9 +15,15 @@ SetTextPosition(4, (768-GetTextTotalWidth(4))/2, 900)
 gosub Hidegamesprites
 gosub showmenutext
 
-repeat
-	sync()
-until GetRawKeyState(32)=1
+if GetKeyboardExists()=1
+	repeat
+		sync()
+	until GetRawKeyState(65)=1
+else
+	repeat
+		sync()
+	until GetPointerState()=1
+endif
 
 gameover=0
 gosub loader
