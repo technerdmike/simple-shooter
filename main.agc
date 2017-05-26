@@ -4,6 +4,7 @@
 SetWindowSize(768,1024,0)
 SetWindowAllowResize(5)
 SetVirtualResolution(768,1024)
+SetOrientationAllowed(1,1,0,0)
 UseNewDefaultFonts(1)
 
 //Player Position Variables
