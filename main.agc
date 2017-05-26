@@ -37,7 +37,7 @@ hiscore=0
 #include "enemy_move.agc"
 #include "sounds.agc"
 #include "Collision.agc"
-#include "Stars.agc"
+#include "stars.agc"
 #include "Text.agc"
 #include "mainmenu.agc"
 

@@ -17,7 +17,7 @@ gosub showmenutext
 
 repeat
 	sync()
-until GetRawKeyState(32)=1
+until GetRawKeyState(65)=1
 
 gameover=0
 gosub loader
